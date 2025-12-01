@@ -1,8 +1,8 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import MapSelectors from "../components/MapSelectors";
 import api from "../api/api";
-import { AuthContext } from "../context/AuthContext";
+
 
 export default function RiderPostPage() {
   const [pickup, setPickup] = useState(null);
