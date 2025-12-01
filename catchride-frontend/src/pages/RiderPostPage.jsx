@@ -7,7 +7,7 @@ import { AuthContext } from "../context/AuthContext";
 export default function RiderPostPage() {
   const [pickup, setPickup] = useState(null);
   const [drop, setDrop] = useState(null);
-  const { user } = useContext(AuthContext);
+ 
 
   const handlePost = async () => {
     if (!pickup || !drop) return alert("Select pickup and drop on map (click pickup then drop).");
